@@ -1,4 +1,4 @@
-/packages/client/node_modules
+/packages/web_client/node_modules
 /packages/server/node_modules
 /node_modules
 .gitignore
