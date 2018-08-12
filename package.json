@@ -3,6 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "test": "lerna run test:ci",
+    "clean": "lerna clean",
+    "clean:build": "lerna exec -- rimraf lib",
+    "release": "lerna publish",
+    "ls": "lerna ls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fullstak/reactreduxnode.git"
+  },
   "dependencies": {
     "lerna": "^3.0.3"
   }
