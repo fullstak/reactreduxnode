@@ -5,11 +5,23 @@
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3"
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5"
   },
   "dependencies": {
-    "babel-preset-env": "^1.7.0",
     "body-parser": "^1.18.3",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "pm2": "^3.0.3",
+    "serve-index": "^1.9.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "scripts": {
+    "server:start": "pm2 start ./build/server.js",
+    "server:stop": "pm2 stop 0",
+    "server:list": "pm2 list",
+    "build": "webpack"
   }
 }

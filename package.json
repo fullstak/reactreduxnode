@@ -5,8 +5,12 @@
   "license": "MIT",
   "scripts": {
     "bootstrap": "lerna bootstrap",
+    "startserver": "lerna run server:start",
+    "stopserver": "lerna run server:stop",
+    "listserver": "lerna run server:list",
     "test": "lerna run test:ci",
     "clean": "lerna clean",
+    "build": "lerna run build",
     "clean:build": "lerna exec -- rimraf lib",
     "release": "lerna publish",
     "ls": "lerna ls"
